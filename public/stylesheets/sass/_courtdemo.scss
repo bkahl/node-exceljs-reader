@@ -1,0 +1,47 @@
+.btn-primary {
+	border: none;
+
+	&:hover,
+	&:active,
+	&:focus {
+		border: none;
+	}
+
+	a {
+		color: #fff;
+    text-decoration: none;
+
+		&:hover,
+		&.focus {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+
+.btn-group {
+  > .btn {
+    border-bottom-left-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+  }
+
+  > .btn-primary {
+    margin-right: 10px;
+
+  }
+}
+
+.btn-danger {
+	a {
+		color: #fff;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "court-demo",
+  "description": "node script that applies form data to an excel file",
+  "main": "server.js",
+  "authors": [
+    "brad kahl"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap-sass": "^3.3.7"
+  }
+}

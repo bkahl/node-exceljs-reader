@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  .container
+    h3= title
+
+    br
+
+    table.table.table-striped
+      thead
+        tr
+          th #
+          th First Name
+          th Last Name
+          th Email
+          th Date Signed Up
+          th User Paid Yet?
+          th Remove Registered User
+
+      tbody
+        each item, i in users
+          tr
+            td= item.id
+            td= item.fname
+            td= item.lname
+            td= item.lname
+            td= item.lname
+            td= item.paidboolean
+            td
+              button.btn.btn-danger(type='button')
+                a(href='/removeuser/'+item.id) Delete Player
+
+    br
+
+
+    .btn-group(role='group')
+      button.btn.btn-primary(type='button', style="text-align: center;")
+        a(href='/') User Sign Up

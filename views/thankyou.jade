@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  .container
+    h3(style='text-align: center;')= title
+
+    br
+
+    .btn-group(role='group')
+      button.btn.btn-primary(type='button', style="text-align: center;")
+        a(href='/') User Sign Up
+
+      button.btn.btn-primary(type='button', style="text-align: center;")
+        a(href='/registeredusers') Registered Users
